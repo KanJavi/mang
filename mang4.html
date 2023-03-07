@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mang 4</title>
+</head>
+<body>
+    <script>
+        let array = [];
+        let input =prompt("nhap gia tri cua mang:");
+        while (input != null && input !=="" && !isNaN(input)) {
+            array.push(Number(input));
+            input = prompt("gia tri cua mang:")
+        }
+        
+        let sum=0;
+        for (let i = 0; i < array.length; i++) {
+            sum+=array[i];
+            
+
+            
+        }console.log("tong gia tri cua mang la:",sum);
+        let max=array[0]
+        let min=array[0]
+        for (let i = 0; i < array.length; i++) {
+            if (array[i]>max) {
+                max=array[i]
+            }
+            if (array[i]<min){
+                min=array[i]
+            }
+            
+        }
+        console.log("gia tri lon nhat trong mang la:",max);
+        console.log("gia tri nho nhat trong mang la:",min);
+
+    </script>
+</body>
+</html>
